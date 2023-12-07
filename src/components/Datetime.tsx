@@ -33,10 +33,5 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     day: "numeric",
   });
 
-  const time = myDatetime.toLocaleTimeString(LOCALE, {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-
   return <>{date}</>;
 };
