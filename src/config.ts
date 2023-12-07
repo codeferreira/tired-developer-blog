@@ -13,10 +13,10 @@ export const SITE: Site = {
 export const LOCALE = ["en-EN", "pt-BR"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
-  enable: false,
+  enable: true,
   svg: true,
-  width: 216,
-  height: 46,
+  width: 30,
+  height: 45,
 };
 
 export const SOCIALS: SocialObjects = [
@@ -48,7 +48,7 @@ export const SOCIALS: SocialObjects = [
     name: "Mail",
     href: "mailto:contact@ferreiracode.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: true,
+    active: false,
   },
   {
     name: "Twitter",
