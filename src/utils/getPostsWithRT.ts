@@ -23,6 +23,9 @@ export const getReadingTime = async () => {
 
 const getPostsWithRT = async (posts: CollectionEntry<"blog">[]) => {
   const mapFrontmatter = await getReadingTime();
+
+  if (!posts) return [];
+
   return posts.map(post => {
     post.data.readingTime = mapFrontmatter.get(slugify(post.data));
     return post;
